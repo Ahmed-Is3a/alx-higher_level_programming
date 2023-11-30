@@ -6,9 +6,9 @@ if __name__ == "__main__":
     arguments = argv[1:]
     n = len(argv) - 1
     if n == 0:
-        print("0 arguments.")
+        print("{} arguments.".format(n))
     elif n == 2:
-        print("1 argument:")
+        print("{} argument:".format(n))
     else:
         print("{} arguments:".format(n))
 
