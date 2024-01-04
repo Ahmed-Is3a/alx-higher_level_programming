@@ -1,6 +1,26 @@
 #!/usr/bin/python3
 
+""" represent a class Rectangle """
+
+
 class Rectangle:
+    """
+    Represents a rectangle.
+
+    Attributes:
+    - width (int): The width of the rectangle.
+    - height (int): The height of the rectangle.
+
+    Methods:
+    - __init__(self, width=0, height=0): Initializes a new Rectangle instance.
+    - width(self): retrive the width value
+    - width(self, value): set value
+    - height(self): retrive height value
+    - height(self, value): set height value
+    - area(self): calculates the area
+    - perimeter(self): calculates the perimeter
+    - __str__(self): string representation of class object
+    """
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
