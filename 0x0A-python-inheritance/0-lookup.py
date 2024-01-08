@@ -12,4 +12,4 @@ def lookup(obj):
 
     """
 
-    return list(dir(obj))
+    return [att for att in (dir(obj))]
