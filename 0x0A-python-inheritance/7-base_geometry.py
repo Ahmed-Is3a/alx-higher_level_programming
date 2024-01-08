@@ -1,20 +1,20 @@
 #!/usr/bin/python3
 
-""" represent an empty class """
+""" base goemetry calculation modulal """
 
 
 class BaseGeometry:
-    """ BaseGeometry class"""
+    """ BaseGeometry class - calculates the geomety"""
 
     def area(self):
         """
-        area calculation
+        calculates the area of the geometry
         """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
         """
-        integer validator
+        integer validator: validates if the given value is an int
         """
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(name))
