@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ retpresent square model """
 from rectangle import Rectangle
 
