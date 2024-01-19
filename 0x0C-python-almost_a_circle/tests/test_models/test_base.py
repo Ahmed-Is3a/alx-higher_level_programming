@@ -11,8 +11,7 @@ class TestBase_instantiation(unittest.TestCase):
 
     def test_no_arg(self):
         b1 = Base()
-        b2 = Base()
-        self.assertEqual(b1.id, b2.id - 1)
+        self.assertEqual(b1.id, 1)
 
     def test_three_bases(self):
         b1 = Base()
