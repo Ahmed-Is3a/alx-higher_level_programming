@@ -6,10 +6,26 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 
+class TestBaseClass(unittest.TestCase):
+    def test_id_assignment(self):
+        obj1 = Base()
+        obj2 = Base()
+
+        self.assertEqual(obj1.id, 1)
+        self.assertEqual(obj2.id, 2)
+
+    def test_id_counter_increment(self):
+        obj1 = Base()
+        obj2 = Base()
+
+        # Ensure the _id_counter has been incremented properly
+        self.assertEqual(Base._id_counter, 2)
+
+
 class TestBase_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Base class."""
 
-    def test_no_arg(self):
+    def test_id(self):
         ob1 = Base()
         ob2 = Base()
         self.assertEqual(ob1.id, 1)
