@@ -10,8 +10,10 @@ class TestBase_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Base class."""
 
     def test_no_arg(self):
-        b1 = Base()
-        self.assertEqual(b1.id, 1)
+        ob1 = Base()
+        ob2 = Base()
+        self.assertEqual(ob1.id, 1)
+        self.assertEqual(ob2.id, 2)
 
     def test_three_bases(self):
         b1 = Base()
