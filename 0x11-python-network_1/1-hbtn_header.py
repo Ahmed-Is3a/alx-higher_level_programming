@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+""" print X-Request-ID value """
+
 import urllib.request
 import sys
 
