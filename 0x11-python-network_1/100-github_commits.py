@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" print last 10 commits """
 import requests
 from sys import argv
 
