@@ -11,10 +11,17 @@ if __name__ == "__main__":
     url = f'https://api.github.com/repos/{owner}/{repo}/commits'
     # params = {'per_page': 10}
     response = requests.get(url)
-    for i in range(10):
-        id = response.json()[i]['sha']
-        name = response.json()[i]['commit']['author']['name']
+    json = response.json()
+    i = 0
+    for item in json:
+        if i == 10:
+            break
+        # id = response.json()[i]['sha']
+        id = item.get('sha')
+        # name = response.json()[i]['commit']['author']['name']
+        name = item.get('commit').get('author').get('name')
         print(f"{id}: {name}")
+        i += 1
 
     # if response.status_code == 200:
     #     commits_data = response.json()
