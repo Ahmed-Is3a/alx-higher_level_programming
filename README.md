@@ -1,5 +1,5 @@
 # alx-higher_level_programming
-This repository contains programs written for ALX SE programm. In these projects, I learned Python.
+This repository contains programs written for ALX SE programm. In these projects, I learned Python. Python is good for scripting.
 
 # Projects
 - [0x00-python-hello_world](./0x00-python-hello_world)
