@@ -9,7 +9,6 @@ if __name__ == "__main__":
     owner = argv[2]
 
     url = f'https://api.github.com/repos/{owner}/{repo}/commits'
-    # params = {'per_page': 10}
     response = requests.get(url)
     json = response.json()
     i = 0
@@ -23,9 +22,3 @@ if __name__ == "__main__":
         print(f"{id}: {name}")
         i += 1
 
-    # if response.status_code == 200:
-    #     commits_data = response.json()
-    #     for commit in commits_data:
-    #         commit_info = commit['commit']
-    #         author_name = commit_info['author']['name']
-    #         print(f"{commit_info['tree']['sha']}: {author_name}")
